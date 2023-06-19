@@ -1,3 +1,3 @@
-# Daraja
+# Daraja API
 
 This code initiates a payment transaction using the Safaricom M-PESA API. The user enters their phone number and payment amount in the index.php form, and the data is sent to the stk_initiate.php script when they submit the form. The script then generates a timestamp, access token, and password for the transaction. It uses cURL to send an HTTP POST request to the M-PESA API with the transaction details, including the phone number of the user making the payment, the payment amount, and a callback URL where the user will be redirected after the payment is completed. Once the API receives the request, it will prompt the user to enter their M-PESA PIN to authorize the payment. If the PIN is correct, the payment will be processed, and the user will be redirected to the callback URL. The code prints the response from the API, which includes a transaction ID and other details about the payment.
